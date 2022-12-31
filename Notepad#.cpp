@@ -13,18 +13,18 @@ int main()
         cin>>n;
         string s;
         cin>>s;
-        int x=0;
+        bool x=false;
         for(int i=0;i<n;i++){
             string t;
             t.pb(s[i]);
             t.pb(s[i+1]);
             if(s.find(t,i+2)!=string::npos){
                 cout<< "Yes"<<endl;
-                x++;
+                x=true;
                 break;
             }
         }
-        if(x==0)cout<< "No"<<endl;
+        if(x==false)cout<< "No" <<endl;
     }
 
 
